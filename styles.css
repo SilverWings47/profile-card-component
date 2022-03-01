@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background:hsl(185, 75%, 39%);
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.bg-circle-top {
+    position: fixed;
+    top: -80%;
+    left: -25%;
+}
+
+.bg-circle-bottom {
+    position: fixed;
+    bottom: -95%;
+    right: -20%;
+}
+
+.container {
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-header {
+    flex-basis: 140px;
+    background: url('images/bg-pattern-card.svg');
+}
+
+.profile {
+    background: #fff;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding: 1.4rem;
+}
+
+.profile-img {
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-info {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.profile-name {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.125rem;
+}
+
+.profile-age {
+    color: hsl(0, 0%, 59%);
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+}
+
+.profile-city {
+    font-size: 0.9rem;
+    line-height: 0.8;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile-info span:nth-of-type(3)  {
+    display: block;
+    color: hsl(0, 0%, 59%);
+    margin-top: 0.7rem;
+}
+
+.profile-stats__number {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.125rem;
+}
+
+.profile-stats__title {
+    color: hsl(229, 23%, 23%);
+    font-size: 0.650rem;
+    letter-spacing: 1px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a {
+    color: #fff; 
+    text-decoration: none;
+}
